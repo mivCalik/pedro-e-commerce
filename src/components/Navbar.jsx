@@ -7,8 +7,8 @@ export default function Navbar(){
             <div className="navbar-container" >
                 <Link to="/" className="navbar-brand" >ShopHub </Link>
                 <div>
-                    <Link to={"/"}>Home</Link>
-                    <Link to={"/checkout"}>Cart</Link>
+                    <Link to={"/"} className="navbar-link">Home </Link>
+                    <Link to={"/checkout"} className="navbar-link"> Cart</Link>
                 </div>
                 <div className="navbar-auth">
                     <div className="navbar-auth-links">
