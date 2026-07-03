@@ -6,11 +6,13 @@ import Checkout from './pages/Checkout'
 import Navbar from './components/Navbar'
 import AuthProvider from './context/AuthContext'
 import ProductDetails from './pages/ProductDetails.jsx'
+import CartProvider from './context/CartContext.jsx'
 
 function App() {
 
   return (
     <AuthProvider>
+    <CartProvider>
       <div className='app'>
         <Navbar/>
         <Routes>
@@ -22,6 +24,7 @@ function App() {
 
         </Routes>
       </div>
+    </CartProvider>
     </AuthProvider>
   )
 }
